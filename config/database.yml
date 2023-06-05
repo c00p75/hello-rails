@@ -23,7 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: hello_rails_development
+  database: mydb
+  username: c00p
+  password: penda
+  host: localhost
+  port: 5433
+  # Add the socket path below
+  # host: /usr/include/postgresql/15/server
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
